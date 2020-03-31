@@ -1,0 +1,28 @@
+{
+  "name": "instagram-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunorp/Instagram-Bot.git"
+  },
+  "keywords": [
+    "intagram",
+    "bot",
+    "follow",
+    "insta"
+  ],
+  "author": "Bruno Rossetto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunorp/Instagram-Bot/issues"
+  },
+  "homepage": "https://github.com/brunorp/Instagram-Bot#readme",
+  "dependencies": {
+    "puppeteer": "^2.1.1"
+  }
+}

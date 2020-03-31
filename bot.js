@@ -44,7 +44,6 @@ const autoScroll = page =>
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: "networkidle2" });
   await page.setViewport({ width: 1200, height: 800 });
-  //await autoScroll(page);
   await page.type('input[name=username]', `${USERNAME}`);
   await page.type('input[name=password]', `${PASSWORD}`);
   await page.click('article > .rgFsT > .gr27e > .EPjEi > .HmktE > .Igw0E > button');
@@ -54,6 +53,14 @@ const autoScroll = page =>
   await page.click('._1SP8R > .COOzN > ._22l1 > .Igw0E > a > div');
   await page.waitForNavigation();
   await page.screenshot({path: `print.png`});
-
+  await page.evaluate(
+    async () => {
+      var followButtons = document.getElementsByClassName('sqdOP L3NKy y3zKF'); 
+      for(let i=0; i<followButtons.length; i++){ 
+        await followButtons[i].click(); 
+      } 
+    }
+    //await autoScroll(page);
+  )
   await browser.close();
 })();

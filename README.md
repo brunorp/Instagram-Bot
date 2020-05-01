@@ -1,6 +1,6 @@
 # default-readme-generator
  
-An Javascript Instagram bot that follows the suggestions. Made just for learning.
+Javascript Instagram bot that follows the suggestions. Made just for learning.
  
 ## Usage
 in cmd, choose a folder and run the command:
